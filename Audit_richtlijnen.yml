@@ -1,0 +1,959 @@
+inleiding:
+  '#type': section
+  '#title': Inleiding
+  '#description': |-
+    <p>Om een goed beeld te krijgen van de digitale toegankelijkheid van een website is het nodig om een handmatig onderzoek te verrichten. Dit onderzoek dient te gaan over alle domeinen, subdomeinen en/of deeldomeinen die een logisch geheel vormen met het hoofddomein van de website. Met de&nbsp;<strong>WCAG-EM</strong>&nbsp;methode neem ik nauwkeurige steekproeven, zodat er een compleet beeld staat van de digitale toegankelijkheid van het product.</p>
+
+    <p>Het onderzoek is een onderzoek naar waar het digitale product niet voldoet aan de norm van&nbsp;<strong>WCAG 2.1, niveau AA</strong>. In het onderzoek wordt er gekeken naar wat er niet voldoet.</p>
+  '#help_title': 'Meer informatie over de gebruikte test tools'
+  '#help': |-
+    AXE is een gratis of betaalde tool van Deque en te gebruiken als extentie in Chrome, FireFox, Safari en tegenwoordig ook Edge, Wave, Google Lighthouse.<br />
+    <br />
+    Wave is een online tool die via de volgende <a href="https://wave.webaim.org/" target="_blank"><strong>website</strong></a> te benaderen is.<br />
+    <br />
+    Google Lighthouse is standaard ingebouwd in Google Chrome en test niet alleen op Toegankelijkheid, maar ook op SEO en snelheid van je website.
+  '#more_title': 'Meer lezen over de gebruikte methodes'
+  '#more': |-
+    <p>Testen gebeurt voor een groot deel handmatig en aan de hand van een steekproef waarbij ik gebruik maak van AXE, Wave, Google Lighthouse als geautomatiseerde tools maar de belangrijkste test voer ik handmatig uit door gebruik te maken van mijn jarenlange kennis van gebruikersvriendelijkheid en logica in een website of formulier.<br />
+    <br />
+    Het onderzoek betreft een steekproef van de website. De resultaten worden per steekproef opgeschreven.<br />
+    Als voorbeeld: als een type toegankelijkheidsprobleem zich op meerdere pagina&rsquo;s voordoet, dan worden hiervan &eacute;&eacute;n of enkele voorbeelden gegeven.</p>
+
+    <p>Aan het begin van het onderzoek bekijken wij welke &quot;soorten&quot; pagina&#39;s en inhoud relevant zijn voor deze steekproef. Denk bijvoorbeeld aan de homepage, een veelgestelde vragen pagina, video -en beeldmateriaal, PDF bestanden en contentpagina&#39;s. Welke dit zijn en het resultaat wordt duidelijk opgenomen in het onderzoek.</p>
+
+    <p>Naast het hanteren van de WCAG-EM geven wij ik persoonlijk advies vanuit onze expertise. Dat houdt in dat ik ook kijk naar onderdelen op de website die niet opgenomen zijn in de richtlijnen, maar wel veranderd dienen te worden om de doelgroep beter te kunnen bedienen.</p>
+  '#help_display': element_after
+  objectnaam:
+    '#type': textfield
+    '#title': Objectnaam
+    '#description': 'De naam van het te auditen object'
+    '#required': true
+    '#required_error': 'Vul s.v.p. de naam van het object in.'
+  bedrijfsnaam:
+    '#type': textfield
+    '#title': 'Naam bedrijf of organisatie'
+    '#description': 'Naam van het bedrijf of organisatie die opdrachtgever is van de audit'
+    '#required': true
+    '#required_error': 'Vul s.v.p. uw bedrijfsnaam in.'
+  contactpersoon:
+    '#type': textfield
+    '#title': Contactpersoon
+    '#description': 'Contactpersoon van het bedrijf'
+  naam_website_waar_het_formulier_zich_bevindt:
+    '#type': textfield
+    '#title': 'Naam website waar het formulier zich bevindt'
+    '#multiple': true
+    '#description': 'Vul hier de website(s) in waar de formulieren zich bevinden.'
+aanleiding_onderzoek:
+  '#type': section
+  '#title': 'Aanleiding onderzoek'
+  '#description': '<p>Dit onderzoek is gedaan in opdracht van Metrocov. Het onderzoek is met zoveel mogelijk zorgvuldigheid gedaan. Mochten u vragen en/of suggesties hebben, dan kunt altijd contact met ons opnemen.</p>'
+  het_onderzoek:
+    '#type': textarea
+    '#title': 'Het onderzoek'
+    '#description': |-
+      <p>Dit onderzoek is gedaan in opdracht van [xxxxxxx]. Het onderzoek is met zoveel mogelijk zorgvuldigheid gedaan. Mochten u vragen en/of suggesties hebben, dan kunt altijd contact met ons opnemen.</p>
+
+      <p>Het onderzoek is een onderzoek naar waar het digitale product niet voldoet aan de norm van WCAG 2.1, niveau AA. In het onderzoek wordt er gekeken naar wat er niet voldoet.</p>
+
+      <p>In dit onderzoek hanteren wij de WCAG-EM methode.</p>
+    '#title_display': before
+    '#description_display': after
+    '#help_display': title_after
+  geteste_pagina_s_van_de_website:
+    '#type': textfield
+    '#title': 'Welke pagina''s zijn onderdeel van de steekproef?'
+    '#multiple': true
+    '#description': '<p>Testen gebeurt voor een groot deel handmatig en aan de hand van een steekproef. Het onderzoek betreft een steekproef van de website. De resultaten worden per steekproef opgeschreven. Als voorbeeld: als een type toegankelijkheidsprobleem zich op meerdere pagina&rsquo;s voordoet, dan worden hiervan &eacute;&eacute;n of enkele voorbeelden gegeven.</p>'
+  gebruikte_test_tools:
+    '#type': checkboxes
+    '#title': 'Gebruikte test tools'
+    '#options':
+      aXe: |-
+        aXe -- Toegankelijkheidscontrole voor ontwikkelaars, testers en ontwerpers in Chrome
+        Vind en los meer toegankelijkheidsproblemen op tijdens websiteontwikkeling met axe DevTools.
+
+        De gratis axe DevTools-browserextensie is een snelle, lichtgewicht maar krachtige testtool die wordt aangedreven door 's werelds meest vertrouwde engine voor toegankelijkheidstests, axe-core, ontwikkeld door Deque.
+
+        Waarom axe DevTools gebruiken om toegankelijke websites te bouwen?
+        -Het leveren van briljante gebruikerservaringen voor iedereen, inclusief de 1 miljard mensen die tegenwoordig wereldwijd met een handicap leven.
+        -Om te voorkomen dat u tijd verspilt aan het najagen van nepproblemen. Alleen axe voorkomt vals positieve resultaten.
+        -Om de nauwkeurigheid te verbeteren en te voorkomen dat tickets steeds weer opnieuw opduiken.
+        -Om het risico en de kosten van rechtszaken over toegankelijkheid te verminderen.
+      Wave: 'Wave -- WAVE® is een reeks evaluatietools die auteurs helpt hun webinhoud toegankelijker te maken voor personen met een handicap. WAVE kan veel toegankelijkheids- en Web Content Accessibility Guideline (WCAG)-fouten identificeren, maar maakt ook menselijke evaluatie van webcontent mogelijk. Onze filosofie is om ons te concentreren op problemen waarvan we weten dat ze gevolgen hebben voor eindgebruikers, menselijke evaluatie te vergemakkelijken en voorlichting te geven over webtoegankelijkheid.'
+      Heatmaps: Heatmaps
+      NVDA: NVDA
+      'Google Lighthouse': 'Google Lighthouse'
+      'Mijn eigen inzicht en logica': 'Mijn eigen inzicht en logica'
+  taalinstelling_website_of_formulier:
+    '#type': select
+    '#title': 'Taalinstelling website of formulier'
+    '#options': languages
+  uitvoerdatum_van_het_onderzoek:
+    '#type': datetime
+    '#title': 'Uitvoerdatum van het onderzoek'
+    '#required': true
+    '#required_error': 'Vergeet niet om de datum van uitvoer van het onderzoek in te vullen.'
+    '#date_date_format': ''
+    '#date_time_element': none
+  op_welke_systemen_browsers_heb_ik_getest_:
+    '#type': checkboxes_other
+    '#title': 'Op welke systemen / browsers heb ik getest?'
+    '#options':
+      'Mozilla Firefox': 'Mozilla Firefox -- Bi voorkeur de laatste versie'
+      'Google Chrome': 'Google Chrome -- Bi voorkeur de laatste versie'
+      'Microsoft Edge': 'Microsoft Edge -- Bi voorkeur de laatste versie'
+      'Apple Safari': 'Apple Safari -- Bi voorkeur de laatste versie'
+    '#other__title': 'Andere browser'
+  welke_technieken_worden_gebruikt_door_de_site_:
+    '#type': checkboxes_other
+    '#title': 'Welke technieken worden gebruikt door de site?'
+    '#icheck': minimal-green
+    '#options':
+      'HTML 5': 'HTML 5'
+      CSS: CSS
+      Javascript: Javascript
+    '#other__title': 'Andere keuze'
+    '#other__placeholder': 'Bijvoorbeeld Java …'
+soort_test:
+  '#type': section
+  '#title': 'Soort test'
+  '#description': 'Keuze uit quick-scan, basis audit WCAG 2.1 AA of full audit WCAG 2.1 AA en AAA of Audit ATAG 2.0'
+  quick_scan_5_formulieren:
+    '#type': checkbox
+    '#title': 'Quick scan 5 formulieren'
+    '#description': 'Vink dit aan als je een quick scan wilt laten doen.'
+    '#icheck': square-purple
+  formulieren_quick_scan:
+    '#type': textfield
+    '#title': 'Formulieren quick scan'
+    '#multiple': 5
+    '#description': 'Vul hier 5 formulieren die je wilt laten testen in de quick scan'
+    '#states':
+      visible:
+        ':input[name="quick_scan_5_formulieren"]':
+          checked: true
+  audit_front_end_wcag_2_1_aa_:
+    '#type': checkbox
+    '#title': 'Audit Front-end (WCAG 2.1 AA)'
+    '#description': 'De front-end van de website en de formulieren worden getoetst aan de hand van de WCAG 2.1. AA en AAA.&nbsp;'
+    '#icheck': square-purple
+  audit_back_end_atag_2_0_:
+    '#type': checkbox
+    '#title': 'Audit Back-end (ATAG 2.0)'
+    '#description': 'De front-end van de website en de formulieren worden getoetst aan de hand van de WCAG 2.1. AA en AAA.&nbsp;'
+    '#help_title': 'Meer weten over ATAG'
+    '#help': 'Wil je meer weten over ATAG. Klik dan hier op de <a href="https://www.w3.org/TR/ATAG20/" target="_blank"><strong>link</strong></a> van het W3c.'
+    '#icheck': square-purple
+  audit_beoordelen_website_of_formulier_aan_de_wcag_richtlijnen:
+    '#type': section
+    '#title': 'Audit beoordelen website of formulier aan de WCAG richtlijnen'
+    '#description': |-
+      Dit onderdeel is bedoeld om formulieren en websites te testen of deze voldoen aan de richtlijnen van de WCAG 2.1. A, AA of AAA.<br />
+      Geef bij de keuze &#39;nee&#39; in de toelichting aan waarom het formulier of de website niet aan de criteria kan volden, volgens het &#39;pas toe, leg uit principe&#39;. Indien het succescriteria niet wordt gebruikt in het formulier of website kan n.v.t. worden aangevinkt.<br />
+      <br />
+      Kies het formulier of website wat getest moet worden. Na invulling van dit audit formulier verschijnt er onderin het formulier een score doe xx% moet matchen met de eisen van de WCAG om voor een toegankelijkheidscertificaat in aanmerking te komen.
+    '#help_title': 'Richtlijnen WCAG 2.1 '
+    '#help': 'Klik <a href="https://www.w3.org/WAI/WCAG21/quickref/" target="_blank"><strong>hier</strong></a> om naar de richtlijnen te gaan.'
+    '#more_title': 'Richtlijnen WCAG 2.1 '
+    '#more': 'Klik <a href="https://www.w3.org/WAI/WCAG21/quickref/" target="_blank"><strong>hier</strong></a> om naar de richtlijnen te gaan.'
+    '#states':
+      visible:
+        ':input[name="audit_front_end_wcag_2_1_aa_"]':
+          checked: true
+1_waarneembaar:
+  '#type': section
+  '#title': '1. Waarneembaar'
+  '#description': |-
+    <p>Informatie en componenten van de gebruikersinterface moeten toonbaar zijn aan gebruikers op voor hen waarneembare wijze.</p>
+
+    <section id="tekstalternatieven">&nbsp;</section>
+  '#help_title': 'Meer informatie over waarneembaarheid'
+  '#help': |-
+    Informatie en componenten van de gebruikersinterface moeten toonbaar zijn aan gebruikers op voor hen waarneembare wijze.<br />
+    <br />
+    <a href="http://​​​​​​​https://www.w3.org/Translations/WCAG21-nl/#waarneembaar" id="wcag_scc1" lang="NL" name="Waarneembaarheid" target="_blank">Meer informatie over waarneembaarheid</a>
+  richtlijn_1_1_tekst_alternatieven:
+    '#type': fieldset
+    '#title': 'Richtlijn 1.1 Tekst alternatieven'
+    '#description': 'Lever tekstalternatieven voor alle niet-tekstuele content, zodat die veranderd kan worden in andere vormen die mensen nodig hebben, zoals grote letters, braille, spraak, symbolen of eenvoudigere taal.'
+    '#help_title': 'Richtlijn 1.1 Tekst alternatieven'
+    '#help': 'Klik <a href="https://www.w3.org/Translations/WCAG21-nl/#tekstalternatieven" target="_blank"><strong>hier</strong></a> om de details van de richtlijnen te bekijken.'
+    '#more_title': 'Richtlijn 1.1 Tekst alternatieven'
+    '#more': 'Klik <a href="https://www.w3.org/Translations/WCAG21-nl/#tekstalternatieven" target="_blank"><strong>hier</strong></a> om de details van de richtlijnen te bekijken.'
+    '#description_display': tooltip
+    '#help_display': element_after
+    voldoet_aan_succescriteria_1_1_1_niet_tekstuele_content_a_:
+      '#type': radios_other
+      '#title': 'Voldoet aan succescriteria 1.1.1. - Niet-tekstuele content (A)'
+      '#options':
+        Ja: 'Ja -- Voldoet aan succescriteria 1.1.1.'
+        Nee: 'Nee -- Voldoet niet aan succescriteria 1.1.1.'
+        N.v.t.: 'N.v.t. -- Succescriteria 1.1.1. is niet van toepassing'
+    toelichting_indien_niet_voldoet_aan_succescriteria_1_1_1_:
+      '#type': textarea
+      '#title': 'Toelichting indien niet voldoet aan succescriteria 1.1.1.'
+      '#counter_type': character
+      '#counter_minimum': 1
+      '#counter_maximum': 5000
+      '#counter_maximum_message': 'Dit veld kan maximaal 5000 tekens bevatten. Indien u meer informatie wenst te beschrijven voeg dan de bevindingen toe in Word.'
+      '#states':
+        visible:
+          ':input[name="voldoet_aan_succescriteria_1_1_1_niet_tekstuele_content_a_[radios]"]':
+            value: Nee
+    voeg_screenshots_toe_van_de_test:
+      '#type': attachment_url
+      '#title': 'Voeg screenshots toe van de test voor criteria 1.1.1'
+      '#display_on': both
+      '#url': /
+  richtlijn_1_2_op_tijd_gebaseerde_media:
+    '#type': fieldset
+    '#title': 'Richtlijn 1.2 Op tijd gebaseerde media'
+    '#description': 'Lever alternatieven voor op tijd gebaseerde media.'
+    '#help_title': 'Richtlijn 1.2 Op tijd gebaseerde media'
+    '#help': 'Klik <a href="https://www.w3.org/Translations/WCAG21-nl/#op-tijd-gebaseerde-media" target="_blank"><strong>hier</strong></a> om de details van de richtlijnen te bekijken.'
+    '#more_title': 'Richtlijn 1.2 Op tijd gebaseerde media'
+    '#more': 'Klik <a href="https://www.w3.org/Translations/WCAG21-nl/#op-tijd-gebaseerde-media" target="_blank"><strong>hier</strong></a> om de details van de richtlijnen te bekijken.'
+    '#description_display': tooltip
+    '#help_display': element_after
+    voldoet_aan_succescriteria_1_2_1_louter_geluid_en_louter_videobe:
+      '#type': radios_other
+      '#title': 'Voldoet aan succescriteria 1.2.1. - Louter-geluid en louter-videobeeld (vooraf opgenomen) (A)'
+      '#options':
+        Ja: 'Ja -- Voldoet aan succescriteria 1.2.1.'
+        Nee: 'Nee -- Voldoet niet aan succescriteria 1.2.1.'
+        N.v.t.: 'N.v.t. -- Succescriteria 1.2.1. is niet van toepassing'
+    toelichting_indien_niet_voldoet_aan_succescriteria_1_2_1_:
+      '#type': textarea
+      '#title': 'Toelichting indien niet voldoet aan succescriteria 1.2.1.'
+      '#counter_type': character
+      '#counter_minimum': 1
+      '#counter_maximum': 5000
+      '#counter_maximum_message': 'Dit veld kan maximaal 5000 tekens bevatten. Indien u meer informatie wenst te beschrijven voeg dan de bevindingen toe in Word.'
+      '#states':
+        visible:
+          ':input[name="voldoet_aan_succescriteria_1_2_1_louter_geluid_en_louter_videobe[radios]"]':
+            value: Nee
+    voeg_screenshots_toe_van_de_test_voor_criteria_121:
+      '#type': attachment_url
+      '#title': 'Voeg screenshots toe van de test voor criteria 1.2.1.'
+      '#display_on': both
+      '#url': /
+    voldoet_aan_succescriteria_1_2_2_ondertitels_voor_doven_en_slech:
+      '#type': radios_other
+      '#title': 'Voldoet aan succescriteria 1.2.2. -  Ondertitels voor doven en slechthorenden (vooraf opgenomen) (A)'
+      '#options':
+        Ja: 'Ja -- Voldoet aan succescriteria 1.2.2.'
+        Nee: 'Nee -- Voldoet niet aan succescriteria 1.2.2.'
+        N.v.t.: 'N.v.t. -- Succescriteria 1.2.2. is niet van toepassing'
+    toelichting_indien_niet_voldoet_aan_succescriteria_1_2_2_:
+      '#type': textarea
+      '#title': 'Toelichting indien niet voldoet aan succescriteria 1.2.2.'
+      '#counter_type': character
+      '#counter_minimum': 1
+      '#counter_maximum': 5000
+      '#counter_maximum_message': 'Dit veld kan maximaal 5000 tekens bevatten. Indien u meer informatie wenst te beschrijven voeg dan de bevindingen toe in Word.'
+      '#states':
+        visible:
+          ':input[name="voldoet_aan_succescriteria_1_2_2_ondertitels_voor_doven_en_slech[radios]"]':
+            value: Nee
+    voeg_screenshots_toe_van_de_test_voor_criteria_1_2_2_:
+      '#type': attachment_url
+      '#title': 'Voeg screenshots toe van de test voor criteria 1.2.2.'
+      '#display_on': both
+      '#url': /
+    voldoet_aan_succescriteria_1_2_3_audiodescriptie_of_media_altern:
+      '#type': radios_other
+      '#title': 'Voldoet aan succescriteria 1.2.3. -  Audiodescriptie of media-alternatief (vooraf opgenomen) (A)'
+      '#options':
+        Ja: 'Ja -- Voldoet aan succescriteria 1.2.3.'
+        Nee: 'Nee -- Voldoet niet aan succescriteria 1.2.3.'
+        N.v.t.: 'N.v.t. -- Succescriteria 1.2.3. is niet van toepassing'
+    toelichting_indien_niet_voldoet_aan_succescriteria_1_2_3_:
+      '#type': textarea
+      '#title': 'Toelichting indien niet voldoet aan succescriteria 1.2.3.'
+      '#counter_type': character
+      '#counter_minimum': 1
+      '#counter_maximum': 5000
+      '#counter_maximum_message': 'Dit veld kan maximaal 5000 tekens bevatten. Indien u meer informatie wenst te beschrijven voeg dan de bevindingen toe in Word.'
+      '#states':
+        visible:
+          ':input[name="voldoet_aan_succescriteria_1_2_3_audiodescriptie_of_media_altern[radios]"]':
+            value: Nee
+    voeg_screenshots_toe_van_de_test_voor_criteria_1_2_3_:
+      '#type': attachment_url
+      '#title': 'Voeg screenshots toe van de test voor criteria 1.2.3.'
+      '#display_on': both
+      '#url': /
+    voldoet_aan_succescriteria_1_2_4_ondertitelingen_live_a_:
+      '#type': radios_other
+      '#title': 'Voldoet aan succescriteria 1.2.4. -  Ondertitelingen (Live) (A)'
+      '#options':
+        Ja: 'Ja -- Voldoet aan succescriteria 1.2.4.'
+        Nee: 'Nee -- Voldoet niet aan succescriteria 1.2.4.'
+        N.v.t.: 'N.v.t. -- Succescriteria 1.2.4. is niet van toepassing'
+    toelichting_indien_niet_voldoet_aan_succescriteria_1_2_4_:
+      '#type': textarea
+      '#title': 'Toelichting indien niet voldoet aan succescriteria 1.2.4.'
+      '#counter_type': character
+      '#counter_minimum': 1
+      '#counter_maximum': 5000
+      '#counter_maximum_message': 'Dit veld kan maximaal 5000 tekens bevatten. Indien u meer informatie wenst te beschrijven voeg dan de bevindingen toe in Word.'
+      '#states':
+        visible:
+          ':input[name="voldoet_aan_succescriteria_1_2_3_audiodescriptie_of_media_altern[radios]"]':
+            value: Nee
+    voeg_screenshots_toe_van_de_test_voor_criteria_1_2_4_:
+      '#type': attachment_url
+      '#title': 'Voeg screenshots toe van de test voor criteria 1.2.4.'
+      '#display_on': both
+      '#url': /
+    voldoet_aan_succescriteria_1_2_5_omschrijving_geluid_vooropgenom:
+      '#type': radios_other
+      '#title': 'Voldoet aan succescriteria 1.2.5. -  Omschrijving geluid (vooropgenomen) (A)'
+      '#options':
+        Ja: 'Ja -- Voldoet aan succescriteria 1.2.5.'
+        Nee: 'Nee -- Voldoet niet aan succescriteria 1.2.5.'
+        N.v.t.: 'N.v.t. -- Succescriteria 1.2.5. is niet van toepassing'
+    toelichting_indien_niet_voldoet_aan_succescriteria_1_2_5_:
+      '#type': textarea
+      '#title': 'Toelichting indien niet voldoet aan succescriteria 1.2.5.'
+      '#counter_type': character
+      '#counter_minimum': 1
+      '#counter_maximum': 5000
+      '#counter_maximum_message': 'Dit veld kan maximaal 5000 tekens bevatten. Indien u meer informatie wenst te beschrijven voeg dan de bevindingen toe in Word.'
+      '#states':
+        visible:
+          ':input[name="voldoet_aan_succescriteria_1_2_3_audiodescriptie_of_media_altern[radios]"]':
+            value: Nee
+    voeg_screenshots_toe_van_de_test_voor_criteria_1_2_5_:
+      '#type': attachment_url
+      '#title': 'Voeg screenshots toe van de test voor criteria 1.2.5.'
+      '#display_on': both
+      '#url': /
+  richtlijn_1_3_aanpasbaar:
+    '#type': fieldset
+    '#title': 'Richtlijn 1.3 Aanpasbaar'
+    '#help_title': 'Richtlijn 1.3 Aanpasbaar'
+    '#help': 'Klik <a href="https://www.w3.org/Translations/WCAG21-nl/#aanpasbaar" target="_blank"><strong>hier</strong></a> om meer te lezen.'
+    '#more_title': 'Richtlijn 1.3 Aanpasbaar'
+    '#more': 'Klik <a href="https://www.w3.org/Translations/WCAG21-nl/#aanpasbaar" target="_blank"><strong>hier</strong></a> om meer te lezen.'
+    voldoet_aan_succescriteria_1_3_1_informatie_en_relaties_a_:
+      '#type': radios_other
+      '#title': 'Voldoet aan succescriteria 1.3.1. - Informatie en relaties (A)'
+      '#options':
+        Ja: 'Ja -- Voldoet aan succescriteria 1.3.1.'
+        Nee: 'Nee -- Voldoet niet aan succescriteria 1.3.1.'
+        N.v.t.: 'N.v.t. -- Succescriteria 1.3.1. is niet van toepassing'
+    toelichting_indien_niet_voldoet_aan_succescriteria_1_3_1:
+      '#type': textarea
+      '#title': 'Toelichting indien niet voldoet aan succescriteria 1.3.1'
+      '#counter_type': character
+      '#counter_minimum': 1
+      '#counter_maximum': 5000
+      '#counter_maximum_message': 'Dit veld kan maximaal 5000 tekens bevatten. Indien u meer informatie wenst te beschrijven voeg dan de bevindingen toe in Word.'
+      '#states':
+        visible:
+          ':input[name="voldoet_aan_succescriteria_1_2_3_audiodescriptie_of_media_altern[radios]"]':
+            value: Nee
+    voeg_screenshots_toe_van_de_test_voor_criteria_1_3_1_:
+      '#type': attachment_url
+      '#title': 'Voeg screenshots toe van de test voor criteria 1.3.1.'
+      '#display_on': both
+      '#url': /
+    voldoet_aan_succescriteria_1_3_2_betekenisvolle_volgorde_a_:
+      '#type': radios_other
+      '#title': 'Voldoet aan succescriteria 1.3.2. - Betekenisvolle volgorde (A)'
+      '#options':
+        Ja: 'Ja -- Voldoet aan succescriteria 1.3.2.'
+        Nee: 'Nee -- Voldoet niet aan succescriteria 1.3.2.'
+        N.v.t.: 'N.v.t. -- Succescriteria 1.3.2. is niet van toepassing'
+    toelichting_indien_niet_voldoet_aan_succescriteria_1_3_2:
+      '#type': textarea
+      '#title': 'Toelichting indien niet voldoet aan succescriteria 1.3.2'
+      '#counter_type': character
+      '#counter_minimum': 1
+      '#counter_maximum': 5000
+      '#counter_maximum_message': 'Dit veld kan maximaal 5000 tekens bevatten. Indien u meer informatie wenst te beschrijven voeg dan de bevindingen toe in Word.'
+      '#states':
+        visible:
+          ':input[name="voldoet_aan_succescriteria_1_2_3_audiodescriptie_of_media_altern[radios]"]':
+            value: Nee
+    voeg_screenshots_toe_van_de_test_voor_criteria_1_3_2_:
+      '#type': attachment_url
+      '#title': 'Voeg screenshots toe van de test voor criteria 1.3.2.'
+      '#display_on': both
+      '#url': /
+    voldoet_aan_succescriteria_1_3_3_zintuiglijk_eigenschappen_a_:
+      '#type': radios_other
+      '#title': 'Voldoet aan succescriteria 1.3.3. - Zintuiglijke eigenschappen (A)'
+      '#options':
+        Ja: 'Ja -- Voldoet aan succescriteria 1.3.3.'
+        Nee: 'Nee -- Voldoet niet aan succescriteria 1.3.3.'
+        N.v.t.: 'N.v.t. -- Succescriteria 1.3.3. is niet van toepassing'
+    toelichting_indien_niet_voldoet_aan_succescriteria_1_3_3:
+      '#type': textarea
+      '#title': 'Toelichting indien niet voldoet aan succescriteria 1.3.3'
+      '#counter_type': character
+      '#counter_minimum': 1
+      '#counter_maximum': 5000
+      '#counter_maximum_message': 'Dit veld kan maximaal 5000 tekens bevatten. Indien u meer informatie wenst te beschrijven voeg dan de bevindingen toe in Word.'
+      '#states':
+        visible:
+          ':input[name="voldoet_aan_succescriteria_1_3_3_zintuiglijk_eigenschappen_a_[radios]"]':
+            value: Nee
+    voeg_screenshots_toe_van_de_test_voor_criteria_1_3_3_:
+      '#type': attachment_url
+      '#title': 'Voeg screenshots toe van de test voor criteria 1.3.3.'
+      '#display_on': both
+      '#url': /
+    voldoet_aan_succescriteria_1_3_4_orientatie_aa_:
+      '#type': radios_other
+      '#title': 'Voldoet aan succescriteria 1.3.4. - Orientatie (AA)'
+      '#options':
+        Ja: 'Ja -- Voldoet aan succescriteria 1.3.4.'
+        Nee: 'Nee -- Voldoet niet aan succescriteria 1.3.4.'
+        N.v.t.: 'N.v.t. -- Succescriteria 1.3.4. is niet van toepassing'
+    toelichting_indien_niet_voldoet_aan_succescriteria_1_3_4:
+      '#type': textarea
+      '#title': 'Toelichting indien niet voldoet aan succescriteria 1.3.4'
+      '#counter_type': character
+      '#counter_minimum': 1
+      '#counter_maximum': 5000
+      '#counter_maximum_message': 'Dit veld kan maximaal 5000 tekens bevatten. Indien u meer informatie wenst te beschrijven voeg dan de bevindingen toe in Word.'
+      '#states':
+        visible:
+          ':input[name="voldoet_aan_succescriteria_1_3_4_orientatie_aa_[radios]"]':
+            value: Nee
+    voeg_screenshots_toe_van_de_test_voor_criteria_1_3_4_:
+      '#type': attachment_url
+      '#title': 'Voeg screenshots toe van de test voor criteria 1.3.4.'
+      '#display_on': both
+      '#url': /
+    voldoet_aan_succescriteria_1_3_5_identificeren_van_invoerdoelen_aa_:
+      '#type': radios_other
+      '#title': 'Voldoet aan succescriteria 1.3.5. - Identificeren van invoerdoelen (AA)'
+      '#options':
+        Ja: 'Ja -- Voldoet aan succescriteria 1.3.5.'
+        Nee: 'Nee -- Voldoet niet aan succescriteria 1.3.5.'
+        N.v.t.: 'N.v.t. -- Succescriteria 1.3.5. is niet van toepassing'
+    toelichting_indien_niet_voldoet_aan_succescriteria_1_3_5:
+      '#type': textarea
+      '#title': 'Toelichting indien niet voldoet aan succescriteria 1.3.5'
+      '#counter_type': character
+      '#counter_minimum': 1
+      '#counter_maximum': 5000
+      '#counter_maximum_message': 'Dit veld kan maximaal 5000 tekens bevatten. Indien u meer informatie wenst te beschrijven voeg dan de bevindingen toe in Word.'
+      '#states':
+        visible:
+          ':input[name="voldoet_aan_succescriteria_1_3_5_identificeren_van_invoerdoelen_aa_[radios]"]':
+            value: Nee
+    voeg_screenshots_toe_van_de_test_voor_criteria_1_3_5_:
+      '#type': attachment_url
+      '#title': 'Voeg screenshots toe van de test voor criteria 1.4.13.'
+      '#display_on': both
+      '#url': /
+  richtlijn_1_4_onderscheidbaar:
+    '#type': fieldset
+    '#title': 'Richtlijn 1.4 Onderscheidbaar'
+    '#help_title': 'Richtlijn 1.4 Onderscheidbaar'
+    '#help': 'Klik <a href="https://https://www.w3.org/Translations/WCAG21-nl/#onderscheidbaar" target="_blank"><strong>hier</strong></a> om meer te lezen.'
+    '#more_title': 'Richtlijn 1.4 Onderscheidbaar'
+    '#more': 'Klik <a href="https://https://www.w3.org/Translations/WCAG21-nl/#onderscheidbaar" target="_blank"><strong>hier</strong></a> om meer te lezen.'
+    voldoet_aan_succescriteria_1_4_1_gebruik_van_kleur_a:
+      '#type': radios_other
+      '#title': 'Voldoet aan succescriteria 1.4.1. - Gebruik van kleur (A)'
+      '#options':
+        Ja: 'Ja -- Voldoet aan succescriteria 1.4.1.'
+        Nee: 'Nee -- Voldoet niet aan succescriteria 1.4.1.'
+        N.v.t.: 'N.v.t. -- Succescriteria 1.4.1. is niet van toepassing'
+    toelichting_indien_niet_voldoet_aan_succescriteria_1_4_1:
+      '#type': textarea
+      '#title': 'Toelichting indien niet voldoet aan succescriteria 1.4.1'
+      '#counter_type': character
+      '#counter_minimum': 1
+      '#counter_maximum': 5000
+      '#counter_maximum_message': 'Dit veld kan maximaal 5000 tekens bevatten. Indien u meer informatie wenst te beschrijven voeg dan de bevindingen toe in Word.'
+      '#states':
+        visible:
+          ':input[name="voldoet_aan_succescriteria_1_4_1_gebruik_van_kleur[radios]"]':
+            value: Nee
+    voeg_screenshots_toe_van_de_test_voor_criteria_1_4_1_:
+      '#type': attachment_url
+      '#title': 'Voeg screenshots toe van de test voor criteria 1.4.1.'
+      '#display_on': both
+      '#url': /
+    voldoet_aan_succescriteria_1_4_2_controle_van_geluid_a:
+      '#type': radios_other
+      '#title': 'Voldoet aan succescriteria 1.4.2. - Controle van geluid (A)'
+      '#options':
+        Ja: 'Ja -- Voldoet aan succescriteria 1.4.2.'
+        Nee: 'Nee -- Voldoet niet aan succescriteria 1.4.2.'
+        N.v.t.: 'N.v.t. -- Succescriteria 1.4.2. is niet van toepassing'
+    toelichting_indien_niet_voldoet_aan_succescriteria_1_4_2:
+      '#type': textarea
+      '#title': 'Toelichting indien niet voldoet aan succescriteria 1.4.2'
+      '#counter_type': character
+      '#counter_minimum': 1
+      '#counter_maximum': 5000
+      '#counter_maximum_message': 'Dit veld kan maximaal 5000 tekens bevatten. Indien u meer informatie wenst te beschrijven voeg dan de bevindingen toe in Word.'
+      '#states':
+        visible:
+          ':input[name="voldoet_aan_succescriteria_1_4_2_controle_van_geluid_a[radios]"]':
+            value: Nee
+    voeg_screenshots_toe_van_de_test_voor_criteria_1_4_2_:
+      '#type': attachment_url
+      '#title': 'Voeg screenshots toe van de test voor criteria 1.4.2.'
+      '#display_on': both
+      '#url': /
+    voldoet_aan_succescriteria_1_4_3_contrast_minimum_aa:
+      '#type': radios_other
+      '#title': 'Voldoet aan succescriteria 1.4.3. - Contrast minimum (A)'
+      '#options':
+        Ja: 'Ja -- Voldoet aan succescriteria 1.4.3.'
+        Nee: 'Nee -- Voldoet niet aan succescriteria 1.4.3.'
+        N.v.t.: 'N.v.t. -- Succescriteria 1.4.3. is niet van toepassing'
+    toelichting_indien_niet_voldoet_aan_succescriteria_1_4_3:
+      '#type': textarea
+      '#title': 'Toelichting indien niet voldoet aan succescriteria 1.4.3'
+      '#counter_type': character
+      '#counter_minimum': 1
+      '#counter_maximum': 5000
+      '#counter_maximum_message': 'Dit veld kan maximaal 5000 tekens bevatten. Indien u meer informatie wenst te beschrijven voeg dan de bevindingen toe in Word.'
+      '#states':
+        visible:
+          ':input[name="voldoet_aan_succescriteria_1_4_3_contrast_minimum_aa[radios]"]':
+            value: Nee
+    voeg_screenshots_toe_van_de_test_voor_criteria_1_4_3_:
+      '#type': attachment_url
+      '#title': 'Voeg screenshots toe van de test voor criteria 1.4.3.'
+      '#display_on': both
+      '#url': /
+    voldoet_aan_succescriteria_1_4_4_schalen_teksten_aa:
+      '#type': radios_other
+      '#title': 'Voldoet aan succescriteria 1.4.4. - Schalen van teksten (AA)'
+      '#options':
+        Ja: 'Ja -- Voldoet aan succescriteria 1.4.4.'
+        Nee: 'Nee -- Voldoet niet aan succescriteria 1.4.4.'
+        N.v.t.: 'N.v.t. -- Succescriteria 1.4.4. is niet van toepassing'
+    toelichting_indien_niet_voldoet_aan_succescriteria_1_4_4:
+      '#type': textarea
+      '#title': 'Toelichting indien niet voldoet aan succescriteria 1.4.4'
+      '#counter_type': character
+      '#counter_minimum': 1
+      '#counter_maximum': 5000
+      '#counter_maximum_message': 'Dit veld kan maximaal 5000 tekens bevatten. Indien u meer informatie wenst te beschrijven voeg dan de bevindingen toe in Word.'
+      '#states':
+        visible:
+          ':input[name="voldoet_aan_succescriteria_1_4_4_schalen_teksten_aa[radios]"]':
+            value: Nee
+    voeg_screenshots_toe_van_de_test_voor_criteria_1_4_4_:
+      '#type': attachment_url
+      '#title': 'Voeg screenshots toe van de test voor criteria 1.4.4.'
+      '#display_on': both
+      '#url': /
+    voldoet_aan_succescriteria_1_4_5_afbeeldingen_als_tekst_of_schermafbeeldingen_aa:
+      '#type': radios_other
+      '#title': 'Voldoet aan succescriteria 1.4.5. - Afbeeldingen als tekst of schermafbeeldingen (AA)'
+      '#options':
+        Ja: 'Ja -- Voldoet aan succescriteria 1.4.5.'
+        Nee: 'Nee -- Voldoet niet aan succescriteria 1.4.5.'
+        N.v.t.: 'N.v.t. -- Succescriteria 1.4.5. is niet van toepassing'
+    toelichting_indien_niet_voldoet_aan_succescriteria_1_4_5:
+      '#type': textarea
+      '#title': 'Toelichting indien niet voldoet aan succescriteria 1.4.5'
+      '#counter_type': character
+      '#counter_minimum': 1
+      '#counter_maximum': 5000
+      '#counter_maximum_message': 'Dit veld kan maximaal 5000 tekens bevatten. Indien u meer informatie wenst te beschrijven voeg dan de bevindingen toe in Word.'
+      '#states':
+        visible:
+          ':input[name="voldoet_aan_succescriteria_1_4_5_afbeeldingen_als_tekst_of_schermafbeeldingen_aa[radios]"]':
+            value: Nee
+    voeg_screenshots_toe_van_de_test_voor_criteria_1_4_5_:
+      '#type': attachment_url
+      '#title': 'Voeg screenshots toe van de test voor criteria 1.4.5.'
+      '#display_on': both
+      '#url': /
+    voldoet_aan_succescriteria_1_4_10_reflow_van_paginas_aa:
+      '#type': radios_other
+      '#title': 'Voldoet aan succescriteria 1.4.10. - Reflow van paginas (AA)'
+      '#options':
+        Ja: 'Ja -- Voldoet aan succescriteria 1.4.10.'
+        Nee: 'Nee -- Voldoet niet aan succescriteria 1.4.10.'
+        N.v.t.: 'N.v.t. -- Succescriteria 1.4.10. is niet van toepassing'
+    toelichting_indien_niet_voldoet_aan_succescriteria_1_4_10:
+      '#type': textarea
+      '#title': 'Toelichting indien niet voldoet aan succescriteria 1.4.10'
+      '#counter_type': character
+      '#counter_minimum': 1
+      '#counter_maximum': 5000
+      '#counter_maximum_message': 'Dit veld kan maximaal 5000 tekens bevatten. Indien u meer informatie wenst te beschrijven voeg dan de bevindingen toe in Word.'
+      '#states':
+        visible:
+          ':input[name="voldoet_aan_succescriteria_1_4_10_reflow_van_paginas_aa[radios]"]':
+            value: Nee
+    voeg_screenshots_toe_van_de_test_voor_criteria_1_4_10_:
+      '#type': attachment_url
+      '#title': 'Voeg screenshots toe van de test voor criteria 1.4.10.'
+      '#display_on': both
+      '#url': /
+    voldoet_aan_succescriteria_1_4_11_contrast_van_niet_tekstuele_content_aa:
+      '#type': radios_other
+      '#title': 'Voldoet aan succescriteria 1.4.11. - Contrast van niet-tekstuele content (AA)'
+      '#options':
+        Ja: 'Ja -- Voldoet aan succescriteria 1.4.11.'
+        Nee: 'Nee -- Voldoet niet aan succescriteria 1.4.11.'
+        N.v.t.: 'N.v.t. -- Succescriteria 1.4.11. is niet van toepassing'
+    toelichting_indien_niet_voldoet_aan_succescriteria_1_4_11:
+      '#type': textarea
+      '#title': 'Toelichting indien niet voldoet aan succescriteria 1.4.11'
+      '#counter_type': character
+      '#counter_minimum': 1
+      '#counter_maximum': 5000
+      '#counter_maximum_message': 'Dit veld kan maximaal 5000 tekens bevatten. Indien u meer informatie wenst te beschrijven voeg dan de bevindingen toe in Word.'
+      '#states':
+        visible:
+          ':input[name="voldoet_aan_succescriteria_1_4_11_reflow_van_paginas_aa[radios]"]':
+            value: Nee
+    voeg_screenshots_toe_van_de_test_voor_criteria_1_4_11_:
+      '#type': attachment_url
+      '#title': 'Voeg screenshots toe van de test voor criteria 1.4.11.'
+      '#display_on': both
+      '#url': /
+    voldoet_aan_succescriteria_1_4_12_tekstafstand_aa:
+      '#type': radios_other
+      '#title': 'Voldoet aan succescriteria 1.4.12. - Tekstafstand (AA)'
+      '#options':
+        Ja: 'Ja -- Voldoet aan succescriteria 1.4.12.'
+        Nee: 'Nee -- Voldoet niet aan succescriteria 1.4.12.'
+        N.v.t.: 'N.v.t. -- Succescriteria 1.4.12. is niet van toepassing'
+    toelichting_indien_niet_voldoet_aan_succescriteria_1_4_12:
+      '#type': textarea
+      '#title': 'Toelichting indien niet voldoet aan succescriteria 1.4.12'
+      '#counter_type': character
+      '#counter_minimum': 1
+      '#counter_maximum': 5000
+      '#counter_maximum_message': 'Dit veld kan maximaal 5000 tekens bevatten. Indien u meer informatie wenst te beschrijven voeg dan de bevindingen toe in Word.'
+      '#states':
+        visible:
+          ':input[name="voldoet_aan_succescriteria_1_4_12_tekstafstand_aa[radios]"]':
+            value: Nee
+    voeg_screenshots_toe_van_de_test_voor_criteria_1_4_12_:
+      '#type': attachment_url
+      '#title': 'Voeg screenshots toe van de test voor criteria 1.4.12.'
+      '#display_on': both
+      '#url': /
+    voldoet_aan_succescriteria_1_4_13_content_bij_hover_of_focus_aa:
+      '#type': radios_other
+      '#title': 'Voldoet aan succescriteria 1.4.13. - Content bij hover of focus (AA)'
+      '#options':
+        Ja: 'Ja -- Voldoet aan succescriteria 1.4.13.'
+        Nee: 'Nee -- Voldoet niet aan succescriteria 1.4.13.'
+        N.v.t.: 'N.v.t. -- Succescriteria 1.4.13. is niet van toepassing'
+    toelichting_indien_niet_voldoet_aan_succescriteria_1_4_13:
+      '#type': textarea
+      '#title': 'Toelichting indien niet voldoet aan succescriteria 1.4.13'
+      '#counter_type': character
+      '#counter_minimum': 1
+      '#counter_maximum': 5000
+      '#counter_maximum_message': 'Dit veld kan maximaal 5000 tekens bevatten. Indien u meer informatie wenst te beschrijven voeg dan de bevindingen toe in Word.'
+      '#states':
+        visible:
+          ':input[name="voldoet_aan_succescriteria_1_4_13_tekstafstand_aa[radios]"]':
+            value: Nee
+    voeg_screenshots_toe_van_de_test_voor_criteria_1_4_13_:
+      '#type': attachment_url
+      '#title': 'Voeg screenshots toe van de test voor criteria 1.4.13.'
+      '#display_on': both
+      '#url': /
+  richtlijn_1_5_onderscheidbaar:
+    '#type': fieldset
+    '#title': 'Richtlijn 1.5 Onderscheidbaar'
+    '#help_title': 'Richtlijn 1.5 Onderscheidbaar'
+    '#help': 'Klik <a href="https://https://www.w3.org/Translations/WCAG21-nl/#onderscheidbaar" target="_blank"><strong>hier</strong></a> om meer te lezen.'
+    '#more_title': 'Richtlijn 1.5 Onderscheidbaar'
+    '#more': 'Klik <a href="https://https://www.w3.org/Translations/WCAG21-nl/#onderscheidbaar" target="_blank"><strong>hier</strong></a> om meer te lezen.'
+    voldoet_aan_succescriteria_1_5_1_gebruik_van_kleur_a:
+      '#type': radios_other
+      '#title': 'Voldoet aan succescriteria 1.5.1. - Gebruik van kleur (A)'
+      '#options':
+        Ja: 'Ja -- Voldoet aan succescriteria 1.5.1.'
+        Nee: 'Nee -- Voldoet niet aan succescriteria 1.5.1.'
+        N.v.t.: 'N.v.t. -- Succescriteria 1.5.1. is niet van toepassing'
+    toelichting_indien_niet_voldoet_aan_succescriteria_1_5_1:
+      '#type': textarea
+      '#title': 'Toelichting indien niet voldoet aan succescriteria 1.5.1'
+      '#counter_type': character
+      '#counter_minimum': 1
+      '#counter_maximum': 5000
+      '#counter_maximum_message': 'Dit veld kan maximaal 5000 tekens bevatten. Indien u meer informatie wenst te beschrijven voeg dan de bevindingen toe in Word.'
+      '#states':
+        visible:
+          ':input[name="voldoet_aan_succescriteria_1_5_1_gebruik_van_kleur[radios]"]':
+            value: Nee
+    voeg_screenshots_toe_van_de_test_voor_criteria_1_5_1_:
+      '#type': attachment_url
+      '#title': 'Voeg screenshots toe van de test voor criteria 1.5.1.'
+      '#display_on': both
+      '#url': /
+2_bedienbaar:
+  '#type': section
+  '#title': '2. Bedienbaar'
+  '#description': |-
+    <p>Componenten van de gebruikersinterface en navigatie moeten bedienbaar zijn.</p>
+
+    <section id="toetsenbordtoegankelijk">&nbsp;</section>
+  '#help_title': Bedienbaar
+  '#help': 'Klik <a href="https://www.w3.org/Translations/WCAG21-nl/#bedienbaar" target="_blank"><strong>hier</strong></a> voor meer informatie over bedienbaarheid.'
+  '#help_display': title_after
+  richtlijn_2_1_toetsenbordtoegankelijk:
+    '#type': fieldset
+    '#title': 'Richtlijn 2.1 Toetsenbordtoegankelijk'
+    '#description': 'Maak alle functionaliteit beschikbaar vanaf een toetsenbord.'
+    '#help_title': 'Meer informatie over beschikbaarheid vanaf een toetsenbord'
+    '#help': 'Klik <a href="https://www.w3.org/Translations/WCAG21-nl/#toetsenbordtoegankelijk" target="_blank"><strong>hier</strong></a> voor meer informatie over beschikbaarheid vanaf een toetsenbord.'
+    '#help_display': title_after
+    voldoet_aan_succescriteria_2_1_1_bediening_via_toetsenbord_en_muis_a_:
+      '#type': radios_other
+      '#title': 'Voldoet aan succescriteria 2.1.1. - Bediening via toetsenbord en muis (A)'
+      '#options':
+        Ja: 'Ja -- Voldoet aan succescriteria 2.1.1.'
+        Nee: 'Nee -- Voldoet niet aan succescriteria 2.1.1.'
+        N.v.t.: 'N.v.t. -- Succescriteria 2.1.1. is niet van toepassing'
+    toelichting_indien_niet_voldoet_aan_succescriteria_2_1_1_:
+      '#type': textarea
+      '#title': 'Toelichting indien niet voldoet aan succescriteria 2.1.1.'
+      '#counter_type': character
+      '#counter_minimum': 1
+      '#counter_maximum': 5000
+      '#counter_maximum_message': 'Dit veld kan maximaal 5000 tekens bevatten. Indien u meer informatie wenst te beschrijven voeg dan de bevindingen toe in Word.'
+      '#states':
+        visible:
+          ':input[name="voldoet_aan_succescriteria_2_1_1_toetsenbord_a_[radios]"]':
+            value: Nee
+    voeg_screenshots_toe_van_de_test_voor_criteria_2_1_1_:
+      '#type': attachment_url
+      '#title': 'Voeg screenshots toe van de test voor criteria 2.1.1.'
+      '#display_on': both
+      '#url': /
+    voldoet_aan_succescriteria_2_1_2_wisseling_tussen_toetsenbord_en_muis_a_:
+      '#type': radios_other
+      '#title': 'Voldoet aan succescriteria 2.1.2. - Wisseling tussen toetsenbord en muis (A)'
+      '#options':
+        Ja: 'Ja -- Voldoet aan succescriteria 2.1.2.'
+        Nee: 'Nee -- Voldoet niet aan succescriteria 2.1.2.'
+        N.v.t.: 'N.v.t. -- Succescriteria 2.1.2. is niet van toepassing'
+    toelichting_indien_niet_voldoet_aan_succescriteria_2_1_2_:
+      '#type': textarea
+      '#title': 'Toelichting indien niet voldoet aan succescriteria 2.1.2.'
+      '#counter_type': character
+      '#counter_minimum': 1
+      '#counter_maximum': 5000
+      '#counter_maximum_message': 'Dit veld kan maximaal 5000 tekens bevatten. Indien u meer informatie wenst te beschrijven voeg dan de bevindingen toe in Word.'
+      '#states':
+        visible:
+          ':input[name="voldoet_aan_succescriteria_2_1_2_bwisseling_tussen_toetsenbord_en_muis_a_[radios]"]':
+            value: Nee
+    voeg_screenshots_toe_van_de_test_voor_criteria_2_1_2_:
+      '#type': attachment_url
+      '#title': 'Voeg screenshots toe van de test voor criteria 2.1.2.'
+      '#display_on': both
+      '#url': /
+    voldoet_aan_succescriteria_2_1_3_toetsenbord_geen_uitzondering_n:
+      '#type': radios_other
+      '#title': 'Voldoet aan succescriteria 2.1.3. - Toetsenbord (geen uitzondering) Niveau AAA'
+      '#options':
+        Ja: 'Ja -- Voldoet aan succescriteria 2.1.3.'
+        Nee: 'Nee -- Voldoet niet aan succescriteria 2.1.3.'
+        N.v.t.: 'N.v.t. -- Succescriteria 2.1.3. is niet van toepassing'
+    toelichting_indien_niet_voldoet_aan_succescriteria_2_1_3_:
+      '#type': textarea
+      '#title': 'Toelichting indien niet voldoet aan succescriteria 2.1.3.'
+      '#counter_type': character
+      '#counter_minimum': 1
+      '#counter_maximum': 5000
+      '#counter_maximum_message': 'Dit veld kan maximaal 5000 tekens bevatten. Indien u meer informatie wenst te beschrijven voeg dan de bevindingen toe in Word.'
+      '#states':
+        visible:
+          ':input[name="voldoet_aan_succescriteria_2_1_3_toetsenbord_geen_uitzondering_n[radios]"]':
+            value: Nee
+    voeg_screenshots_toe_van_de_test_voor_criteria_2_1_3_:
+      '#type': attachment_url
+      '#title': 'Voeg screenshots toe van de test voor criteria 2.1.3.'
+      '#display_on': both
+      '#url': /
+toegankgelijkheidsverklaring:
+  '#type': wizard_page
+  '#title': Toegankelijkheidsverklaring
+ richtlijn_2_2_genoeg_tijd:
+    '#type': fieldset
+    '#title': 'Richtlijn 2.2 Genoeg tijd'
+    voldoet_aan_succescriteria_2_1_4_enkel_teken_sneltoetsen:
+      '#type': radios_other
+      '#title': 'Voldoet aan succescriteria 2.1.4. - Enkel teken sneltoetsen Niveau A'
+      '#options':
+        Ja: 'Ja -- Voldoet aan succescriteria 2.1.4.'
+        Nee: 'Nee -- Voldoet niet aan succescriteria 2.1.4.'
+        N.v.t.: 'N.v.t. -- Succescriteria 2.1.4. is niet van toepassing'
+    toelichting_indien_niet_voldoet_aan_succescriteria_2_1_4_:
+      '#type': textarea
+      '#title': 'Toelichting indien niet voldoet aan succescriteria 2.1.4.'
+      '#counter_type': character
+      '#counter_minimum': 1
+      '#counter_maximum': 5000
+      '#counter_maximum_message': 'Dit veld kan maximaal 5000 tekens bevatten. Indien u meer informatie wenst te beschrijven voeg dan de bevindingen toe in Word.'
+      '#states':
+        visible:
+          ':input[name="voldoet_aan_succescriteria_2_1_4_enkel_teken_sneltoetsen[radios]"]':
+            value: Nee
+    voeg_screenshots_toe_van_de_test_voor_criteria_2_1_4_:
+      '#type': attachment_url
+      '#title': 'Voeg screenshots toe van de test voor criteria 2.1.4.'
+      '#display_on': both
+      '#url': /
+    voldoet_aan_succescriteria_2_2_1_timing_aanpasbaar:
+      '#type': radios_other
+      '#title': 'Voldoet aan succescriteria 2.2.1. - Timing aanpasbaar Niveau A'
+      '#options':
+        Ja: 'Ja -- Voldoet aan succescriteria 2.2.1.'
+        Nee: 'Nee -- Voldoet niet aan succescriteria 2.2.1.'
+        N.v.t.: 'N.v.t. -- Succescriteria 2.2.1. is niet van toepassing'
+    toelichting_indien_niet_voldoet_aan_succescriteria_2_2_1_:
+      '#type': textarea
+      '#title': 'Toelichting indien niet voldoet aan succescriteria 2.2.1.'
+      '#counter_type': character
+      '#counter_minimum': 1
+      '#counter_maximum': 5000
+      '#counter_maximum_message': 'Dit veld kan maximaal 5000 tekens bevatten. Indien u meer informatie wenst te beschrijven voeg dan de bevindingen toe in Word.'
+      '#states':
+        visible:
+          ':input[name="voldoet_aan_succescriteria_2_2_1_timing aanpasbaar[radios]"]':
+            value: Nee
+    voeg_screenshots_toe_van_de_test_voor_criteria_2_2_1_:
+      '#type': attachment_url
+      '#title': 'Voeg screenshots toe van de test voor criteria 2.2.1.'
+      '#display_on': both
+      '#url': /
+    voldoet_aan_succescriteria_2_2_2_pauzeren_stoppen_verbergen:
+      '#type': radios_other
+      '#title': 'Voldoet aan succescriteria 2.2.2. - Pauzeren, stoppen, verbergen Niveau A'
+      '#options':
+        Ja: 'Ja -- Voldoet aan succescriteria 2.2.2.'
+        Nee: 'Nee -- Voldoet niet aan succescriteria 2.2.2.'
+        N.v.t.: 'N.v.t. -- Succescriteria 2.2.2. is niet van toepassing'
+    toelichting_indien_niet_voldoet_aan_succescriteria_2_2_2_:
+      '#type': textarea
+      '#title': 'Toelichting indien niet voldoet aan succescriteria 2.2.2.'
+      '#counter_type': character
+      '#counter_minimum': 1
+      '#counter_maximum': 5000
+      '#counter_maximum_message': 'Dit veld kan maximaal 5000 tekens bevatten. Indien u meer informatie wenst te beschrijven voeg dan de bevindingen toe in Word.'
+      '#states':
+        visible:
+          ':input[name="voldoet_aan_succescriteria_2_2_2_pauzeren_stoppen_verbergen[radios]"]':
+            value: Nee
+    voeg_screenshots_toe_van_de_test_voor_criteria_2_2_2_:
+      '#type': attachment_url
+      '#title': 'Voeg screenshots toe van de test voor criteria 2.2.2.'
+      '#display_on': both
+      '#url': /
+    voldoet_aan_succescriteria_2_2_3_geen_timing:
+      '#type': radios_other
+      '#title': 'Voldoet aan succescriteria 2.2.3. - Geen timing Niveau AAA'
+      '#options':
+        Ja: 'Ja -- Voldoet aan succescriteria 2.2.3.'
+        Nee: 'Nee -- Voldoet niet aan succescriteria 2.2.3.'
+        N.v.t.: 'N.v.t. -- Succescriteria 2.2.3. is niet van toepassing'
+    toelichting_indien_niet_voldoet_aan_succescriteria_2_2_3_:
+      '#type': textarea
+      '#title': 'Toelichting indien niet voldoet aan succescriteria 2.2.3.'
+      '#counter_type': character
+      '#counter_minimum': 1
+      '#counter_maximum': 5000
+      '#counter_maximum_message': 'Dit veld kan maximaal 5000 tekens bevatten. Indien u meer informatie wenst te beschrijven voeg dan de bevindingen toe in Word.'
+      '#states':
+        visible:
+          ':input[name="voldoet_aan_succescriteria_2_2_3_geen_timing[radios]"]':
+            value: Nee
+    voeg_screenshots_toe_van_de_test_voor_criteria_2_2_3_:
+      '#type': attachment_url
+      '#title': 'Voeg screenshots toe van de test voor criteria 2.2.3.'
+      '#display_on': both
+      '#url': /
+    voldoet_aan_succescriteria_2_2_4_onderbrekingen:
+      '#type': radios_other
+      '#title': 'Voldoet aan succescriteria 2.2.4. - Onderbrekeningen Niveau AAA'
+      '#options':
+        Ja: 'Ja -- Voldoet aan succescriteria 2.2.4.'
+        Nee: 'Nee -- Voldoet niet aan succescriteria 2.2.4.'
+        N.v.t.: 'N.v.t. -- Succescriteria 2.2.4. is niet van toepassing'
+    toelichting_indien_niet_voldoet_aan_succescriteria_2_2_4_:
+      '#type': textarea
+      '#title': 'Toelichting indien niet voldoet aan succescriteria 2.2.4.'
+      '#counter_type': character
+      '#counter_minimum': 1
+      '#counter_maximum': 5000
+      '#counter_maximum_message': 'Dit veld kan maximaal 5000 tekens bevatten. Indien u meer informatie wenst te beschrijven voeg dan de bevindingen toe in Word.'
+      '#states':
+        visible:
+          ':input[name="voldoet_aan_succescriteria_2_2_4_onderbrekingen[radios]"]':
+            value: Nee
+    voeg_screenshots_toe_van_de_test_voor_criteria_2_2_4_:
+      '#type': attachment_url
+      '#title': 'Voeg screenshots toe van de test voor criteria 2.2.4.'
+      '#display_on': both
+      '#url': /
+    voldoet_aan_succescriteria_2_2_5_herauthentisering:
+      '#type': radios_other
+      '#title': 'Voldoet aan succescriteria 2.1.3. - Herauthentisering Niveau AAA'
+      '#options':
+        Ja: 'Ja -- Voldoet aan succescriteria 2.1.3.'
+        Nee: 'Nee -- Voldoet niet aan succescriteria 2.1.3.'
+        N.v.t.: 'N.v.t. -- Succescriteria 2.1.3. is niet van toepassing'
+    toelichting_indien_niet_voldoet_aan_succescriteria_2_2_5_:
+      '#type': textarea
+      '#title': 'Toelichting indien niet voldoet aan succescriteria 2.1.3.'
+      '#counter_type': character
+      '#counter_minimum': 1
+      '#counter_maximum': 5000
+      '#counter_maximum_message': 'Dit veld kan maximaal 5000 tekens bevatten. Indien u meer informatie wenst te beschrijven voeg dan de bevindingen toe in Word.'
+      '#states':
+        visible:
+          ':input[name="voldoet_aan_succescriteria_2_2_5_herauthentisering[radios]"]':
+            value: Nee
+    voeg_screenshots_toe_van_de_test_voor_criteria_2_2_5_:
+      '#type': attachment_url
+      '#title': 'Voeg screenshots toe van de test voor criteria 2.2.5.'
+      '#display_on': both
+      '#url': /
+    voldoet_aan_succescriteria_2_2_6_time-outs:
+      '#type': radios_other
+      '#title': 'Voldoet aan succescriteria 2.2.6. - Time-outs Niveau AAA'
+      '#options':
+        Ja: 'Ja -- Voldoet aan succescriteria 2.2.6.'
+        Nee: 'Nee -- Voldoet niet aan succescriteria 2.2.6.'
+        N.v.t.: 'N.v.t. -- Succescriteria 2.2.6. is niet van toepassing'
+    toelichting_indien_niet_voldoet_aan_succescriteria_2_2_6_:
+      '#type': textarea
+      '#title': 'Toelichting indien niet voldoet aan succescriteria 2.2.6.'
+      '#counter_type': character
+      '#counter_minimum': 1
+      '#counter_maximum': 5000
+      '#counter_maximum_message': 'Dit veld kan maximaal 5000 tekens bevatten. Indien u meer informatie wenst te beschrijven voeg dan de bevindingen toe in Word.'
+      '#states':
+        visible:
+          ':input[name="voldoet_aan_succescriteria_2_2_6_time-outs[radios]"]':
+            value: Nee
+    voeg_screenshots_toe_van_de_test_voor_criteria_2_2_6_:
+      '#type': attachment_url
+      '#title': 'Voeg screenshots toe van de test voor criteria 2.2.6.'
+      '#display_on': both
+      '#url': /
+links_wcag:
+  '#type': hidden
+  '#title': 'Links WCAG'
+  '#default_value': |-
+    https://wcag.nl/kennis/richtlijnen/wcag-2-1-richtlijnen/
+
+    https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=141#keyboard-no-exception
